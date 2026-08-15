@@ -4,25 +4,25 @@ An interactive AI pathfinding engine and algorithmic visualizer built in Python 
 
 ## Features
 
-### Search Algorithms
+### 🔍 Search Algorithms
 
 * **A* Search** — Informed heuristic search using `f(n) = g(n) + h(n)` with Manhattan distance, optimizing path cost across weighted terrain.
 * **Breadth-First Search (BFS)** — Unweighted shortest-path exploration.
 * **Depth-First Search (DFS)** — Uninformed graph traversal exploration.
 
-### Dynamic Terrain
+### 🗺️ Dynamic Terrain
 
 * **Impassable Walls** — Infinite traversal cost obstacles.
 * **Mud Tiles** — Weighted terrain with a traversal cost of `10`, allowing comparison between weighted and unweighted search behavior.
 * **Interactive Map Editing** — Draw walls, mud, or erase terrain directly on the grid.
 
-### Procedural Maze Generation
+### 🧩 Procedural Maze Generation
 
-* Custom **Bulldozer path-carving algorithm**.
+* Custom **"Bulldozer" path-carving algorithm**.
 * Randomly generates walls and mud tiles.
 * Guarantees a traversable path between the start and target nodes.
 
-### Live Analytics Dashboard
+### 📊 Live Analytics Dashboard
 
 Real-time execution telemetry including:
 
@@ -62,7 +62,7 @@ python main.py
 
 ## How It Works
 
-The visualizer operates on a **40 × 40 grid**, where each cell represents a node. The environment supports both impassable obstacles and weighted terrain.
+The visualizer operates on a **40 × 40 grid** where each cell represents a node. The environment supports both impassable obstacles and weighted terrain.
 
 * **Normal tile:** Cost `1`
 * **Mud tile:** Cost `10`
