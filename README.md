@@ -6,7 +6,7 @@ An interactive AI pathfinding engine and algorithmic visualizer built in Python 
 
 ### 🔍 Search Algorithms
 
-* **A* Search** — Informed heuristic search using `f(n) = g(n) + h(n)` with Manhattan distance, optimizing path cost across weighted terrain.
+* **A*** Search* — Informed heuristic search using `f(n) = g(n) + h(n)` with Manhattan distance, optimizing path cost across weighted terrain.
 * **Breadth-First Search (BFS)** — Unweighted shortest-path exploration.
 * **Depth-First Search (DFS)** — Uninformed graph traversal exploration.
 
