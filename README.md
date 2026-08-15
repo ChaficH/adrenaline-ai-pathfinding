@@ -1,33 +1,28 @@
 # Adrenaline: AI Pathfinding Visualizer
 
-An interactive pathfinding engine and algorithm comparison tool built with Python and Pygame. The visualizer runs **A* Search**, **Breadth-First Search (BFS)**, and **Depth-First Search (DFS)** across a 40×40 weighted grid, featuring cost-weighted terrain and live performance analytics.
+An interactive AI pathfinding engine and algorithmic visualizer built in Python with Pygame. It simulates and benchmarks search algorithms (**A\***, **Breadth-First Search**, and **Depth-First Search**) in real-time across cost-weighted grid environments.
 
 ---
 
 ## Features
 
-- **Pathfinding Algorithms**:
-  - **A* Search**: Utilizes Manhattan distance heuristic and dynamic cost evaluation to compute optimal paths.
+- **Search Algorithms**:
+  - **A\* Search**: Informed heuristic search ($f(n) = g(n) + h(n)$ using Manhattan distance) optimizing path cost across weighted terrain.
   - **Breadth-First Search (BFS)**: Unweighted shortest-path exploration.
-  - **Depth-First Search (DFS)**: Deep traversal exploration demonstrating unoptimized pathing.
-- **Cost-Weighted Terrain**:
-  - **Standard Grid**: Cost = 1
-  - **Mud Tiles**: Cost = 10 (triggers weighted re-routing in A*)
-  - **Walls**: Impassable obstacles
-- **Procedural Maze Generation**: Implements a "Bulldozer" carving algorithm ensuring at least one solvable path while generating natural mud and wall distributions.
-- **Live Analytics Dashboard**: Real-time tracking of:
-  - Total nodes explored
-  - Path length (steps)
-  - Mud tiles crossed
-  - Total traversal cost
+  - **Depth-First Search (DFS)**: Uninformed graph traversal exploration.
+- **Dynamic Terrain**:
+  - **Impassable Walls**: Infinite traversal cost obstacles.
+  - **Mud Tiles**: Weighted terrain (traversal cost = 10) for evaluating weighted vs. unweighted algorithmic behavior.
+- **Procedural Maze Generation**: Custom "Bulldozer" path-carving algorithm guaranteeing solvable maps with random obstacles and mud traps.
+- **Live Analytics Dashboard**: Real-time telemetry reporting explored nodes, path length (steps), mud tiles crossed, and total path cost.
 
 ---
 
 ## Tech Stack
 
 - **Language**: Python 3.x
-- **Library**: Pygame
-- **Core Concepts**: Graph Algorithms, Priority Queues, Manhattan Distance Heuristics, Object-Oriented UI
+- **Graphics / UI**: Pygame
+- **Data Structures**: PriorityQueue (`heapq`), Queue, LIFO Stack
 
 ---
 
@@ -35,5 +30,5 @@ An interactive pathfinding engine and algorithm comparison tool built with Pytho
 
 1. **Clone the repository**:
    ```bash
-   git clone [https://github.com/ChaficH/adrenaline-ai-pathfinding.git](https://github.com/ChaficH/adrenaline-ai-pathfinding.git)
-   cd adrenaline-ai-pathfinding
+   git clone [https://github.com/ChaficH/adrenaline-ai-pathfinding-visualizer.git](https://github.com/ChaficH/adrenaline-ai-pathfinding-visualizer.git)
+   cd adrenaline-ai-pathfinding-visualizer
