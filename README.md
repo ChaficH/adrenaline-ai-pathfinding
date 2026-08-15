@@ -18,7 +18,7 @@ An interactive AI pathfinding engine and algorithmic visualizer built in Python 
 
 ### 🧩 Procedural Maze Generation
 
-* Custom **"Bulldozer" path-carving algorithm**.
+* Custom **Bulldozer path-carving algorithm**.
 * Randomly generates walls and mud tiles.
 * Guarantees a traversable path between the start and target nodes.
 
@@ -62,7 +62,7 @@ python main.py
 
 ## How It Works
 
-The visualizer operates on a **40 × 40 grid** where each cell represents a node. The environment supports both impassable obstacles and weighted terrain.
+The visualizer operates on a **40 × 40 grid**, where each cell represents a node. The environment supports both impassable obstacles and weighted terrain.
 
 * **Normal tile:** Cost `1`
 * **Mud tile:** Cost `10`
