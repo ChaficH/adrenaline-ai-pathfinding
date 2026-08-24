@@ -51,7 +51,7 @@ cd adrenaline-ai-pathfinding
 ### 2. Install dependencies
 
 ```bash
-pip install pygame
+pip install -r requirements.txt
 ```
 
 ### 3. Run the application
