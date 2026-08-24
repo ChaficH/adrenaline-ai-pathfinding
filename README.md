@@ -78,8 +78,15 @@ Each algorithm records execution metrics such as nodes explored, path length, mu
 adrenaline-ai-pathfinding/
 │
 ├── main.py
+├── algorithms.py
+├── config.py
+├── maze.py
+├── node.py
+├── ui.py
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+├── LICENSE
+└── .gitignore
 ```
 
 ## Controls
